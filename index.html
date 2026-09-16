@@ -95,10 +95,7 @@
             "description": "A playful camera that reacts to your face with emoji overlays in real time.",
             "url": "https://emojicam.figma.site/"
           }
-        },
-        { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareApplication", "name": "Clack", "description": "Coming soon." } },
-        { "@type": "ListItem", "position": 8, "item": { "@type": "SoftwareApplication", "name": "Folder", "description": "Coming soon." } },
-        { "@type": "ListItem", "position": 9, "item": { "@type": "SoftwareApplication", "name": "Cursor", "description": "Coming soon." } }
+        }
       ]
     }
   ]
@@ -177,8 +174,10 @@
   .status-row { display: flex; align-items: center; gap: 10px; font-size: 14px; color: #8b9096; }
   .status { display: flex; align-items: center; gap: 6px; font-weight: 500; }
   .status.active { color: #17a34a; }
+  .status.progress { color: #c2660d; }
   .status .dot { width: 7px; height: 7px; border-radius: 99px; display: block; }
   .status.active .dot { background: #22c55e; }
+  .status.progress .dot { background: #f59e0b; }
 
   .stamp {
     position: absolute;
@@ -271,7 +270,7 @@
               <h2>Winter Arc</h2>
               <div class="status-row">
                 <span>Sep 2026</span>
-                <span class="status active"><span class="dot"></span>Active</span>
+                <span class="status progress"><span class="dot"></span>Under construction</span>
               </div>
             </div>
           </div>
@@ -365,6 +364,7 @@
         <p class="blurb">A playful camera that reacts to your face with emoji overlays in real time, turning ordinary selfies into something a little more ridiculous.</p>
       </article>
 
+      <!-- Coming soon (Clack, Folder, Cursor) hidden for now
       <article>
         <div class="card-top">
           <div class="card-left">
@@ -400,6 +400,7 @@
           <span class="stamp">Coming soon</span>
         </div>
       </article>
+      -->
 
     </main>
 
