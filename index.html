@@ -150,6 +150,19 @@
 
   article { display: flex; flex-direction: column; gap: 18px; }
 
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: inherit;
+    text-decoration: none;
+    padding: 16px;
+    margin: -16px;
+    border-radius: 14px;
+    transition: background-color 0.15s ease;
+  }
+  .card-link:hover { color: inherit; background-color: rgba(17, 18, 20, 0.045); }
+
   .card-top { position: relative; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   .card-left { display: flex; align-items: flex-start; gap: 16px; min-width: 0; }
 
@@ -208,7 +221,6 @@
     white-space: nowrap;
     padding-top: 2px;
   }
-  .visit:hover { color: #5c6066; }
   .visit .arrow { font-size: 13px; }
 
   @media (max-width: 480px) {
@@ -278,88 +290,98 @@
       </article>
 
       <article>
-        <div class="card-top">
-          <div class="card-left">
-            <img class="icon" src="assets/iphone-duo.png" alt="iPhone Duo Mockup Generator">
-            <div class="meta-col">
-              <h2>iPhone Duo Mockup Generator</h2>
-              <div class="status-row">
-                <span>Aug 2026</span>
-                <span class="status active"><span class="dot"></span>Active</span>
+        <a class="card-link" href="#iphone-duo-mockup-generator">
+          <div class="card-top">
+            <div class="card-left">
+              <img class="icon" src="assets/iphone-duo.png" alt="iPhone Duo Mockup Generator">
+              <div class="meta-col">
+                <h2>iPhone Duo Mockup Generator</h2>
+                <div class="status-row">
+                  <span>Aug 2026</span>
+                  <span class="status active"><span class="dot"></span>Active</span>
+                </div>
               </div>
             </div>
+            <span class="visit">Try it <span class="arrow">↗</span></span>
           </div>
-          <a class="visit" href="#iphone-duo-mockup-generator">Try it <span class="arrow">↗</span></a>
-        </div>
-        <p class="blurb">Generate clean dual-iPhone mockups in seconds for your app store listings, landing pages, and social media posts without touching design software.</p>
+          <p class="blurb">Generate clean dual-iPhone mockups in seconds for your app store listings, landing pages, and social media posts without touching design software.</p>
+        </a>
       </article>
 
       <article>
-        <div class="card-top">
-          <div class="card-left">
-            <img class="icon" src="assets/lizard.png" alt="Lizard">
-            <div class="meta-col">
-              <h2>Lizard</h2>
-              <div class="status-row">
-                <span>Feb 2026</span>
-                <span class="status active"><span class="dot"></span>Active</span>
+        <a class="card-link" href="https://lizard-hoppers.vercel.app/">
+          <div class="card-top">
+            <div class="card-left">
+              <img class="icon" src="assets/lizard.png" alt="Lizard">
+              <div class="meta-col">
+                <h2>Lizard</h2>
+                <div class="status-row">
+                  <span>Feb 2026</span>
+                  <span class="status active"><span class="dot"></span>Active</span>
+                </div>
               </div>
             </div>
+            <span class="visit">Try it <span class="arrow">↗</span></span>
           </div>
-          <a class="visit" href="https://lizard-hoppers.vercel.app/">Try it <span class="arrow">↗</span></a>
-        </div>
-        <p class="blurb">A tiny tribute to the lizard meme from Pixar's Hoppers: it wouldn't leave my head, so I made it a website.</p>
+          <p class="blurb">A tiny tribute to the lizard meme from Pixar's Hoppers: it wouldn't leave my head, so I made it a website.</p>
+        </a>
       </article>
 
       <article>
-        <div class="card-top">
-          <div class="card-left">
-            <img class="icon" src="assets/pallette.png" alt="Palette Roulette">
-            <div class="meta-col">
-              <h2>Palette Roulette</h2>
-              <div class="status-row">
-                <span>Sep 2025</span>
-                <span class="status active"><span class="dot"></span>Active</span>
+        <a class="card-link" href="https://palette-roulette.figma.site/">
+          <div class="card-top">
+            <div class="card-left">
+              <img class="icon" src="assets/pallette.png" alt="Palette Roulette">
+              <div class="meta-col">
+                <h2>Palette Roulette</h2>
+                <div class="status-row">
+                  <span>Sep 2025</span>
+                  <span class="status active"><span class="dot"></span>Active</span>
+                </div>
               </div>
             </div>
+            <span class="visit">Try it <span class="arrow">↗</span></span>
           </div>
-          <a class="visit" href="https://palette-roulette.figma.site/">Try it <span class="arrow">↗</span></a>
-        </div>
-        <p class="blurb">A quick way to discover color palettes: spin the roulette for a fresh set of hues whenever you're stuck picking project colors.</p>
+          <p class="blurb">A quick way to discover color palettes: spin the roulette for a fresh set of hues whenever you're stuck picking project colors.</p>
+        </a>
       </article>
 
       <article>
-        <div class="card-top">
-          <div class="card-left">
-            <img class="icon" src="assets/Globe.png" alt="Globe">
-            <div class="meta-col">
-              <h2>Globe</h2>
-              <div class="status-row">
-                <span>Sep 2025</span>
-                <span class="status active"><span class="dot"></span>Active</span>
+        <a class="card-link" href="https://globe.figma.site/">
+          <div class="card-top">
+            <div class="card-left">
+              <img class="icon" src="assets/Globe.png" alt="Globe">
+              <div class="meta-col">
+                <h2>Globe</h2>
+                <div class="status-row">
+                  <span>Sep 2025</span>
+                  <span class="status active"><span class="dot"></span>Active</span>
+                </div>
               </div>
             </div>
+            <span class="visit">Try it <span class="arrow">↗</span></span>
           </div>
-          <a class="visit" href="https://globe.figma.site/">Try it <span class="arrow">↗</span></a>
-        </div>
-        <p class="blurb">An interactive 3D globe you can spin, zoom, and explore right in the browser, built as a playful way to visualize data.</p>
+          <p class="blurb">An interactive 3D globe you can spin, zoom, and explore right in the browser, built as a playful way to visualize data.</p>
+        </a>
       </article>
 
       <article>
-        <div class="card-top">
-          <div class="card-left">
-            <img class="icon" src="assets/emoji.png" alt="Emojicam">
-            <div class="meta-col">
-              <h2>Emojicam</h2>
-              <div class="status-row">
-                <span>Sep 2025</span>
-                <span class="status active"><span class="dot"></span>Active</span>
+        <a class="card-link" href="https://emojicam.figma.site/">
+          <div class="card-top">
+            <div class="card-left">
+              <img class="icon" src="assets/emoji.png" alt="Emojicam">
+              <div class="meta-col">
+                <h2>Emojicam</h2>
+                <div class="status-row">
+                  <span>Sep 2025</span>
+                  <span class="status active"><span class="dot"></span>Active</span>
+                </div>
               </div>
             </div>
+            <span class="visit">Try it <span class="arrow">↗</span></span>
           </div>
-          <a class="visit" href="https://emojicam.figma.site/">Try it <span class="arrow">↗</span></a>
-        </div>
-        <p class="blurb">A playful camera that reacts to your face with emoji overlays in real time, turning ordinary selfies into something a little more ridiculous.</p>
+          <p class="blurb">A playful camera that reacts to your face with emoji overlays in real time, turning ordinary selfies into something a little more ridiculous.</p>
+        </a>
       </article>
 
       <!-- Coming soon (Clack, Folder, Cursor) hidden for now
