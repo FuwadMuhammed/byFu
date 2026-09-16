@@ -41,9 +41,9 @@
           "position": 1,
           "item": {
             "@type": "SoftwareApplication",
-            "name": "Winter Arc",
-            "description": "A winter arc challenge for designers: daily prompts to keep making through the off-season.",
-            "url": "https://www.byfu.app/#winter-arc"
+            "name": "Lizard",
+            "description": "A tiny tribute to the lizard meme from Pixar's Hoppers.",
+            "url": "https://lizard-hoppers.vercel.app/"
           }
         },
         {
@@ -51,14 +51,24 @@
           "position": 2,
           "item": {
             "@type": "SoftwareApplication",
+            "name": "Winter Arc",
+            "description": "A winter arc challenge for designers: daily prompts to keep making through the off-season.",
+            "url": "https://www.byfu.app/#winter-arc"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
             "name": "iPhone Duo Mockup Generator",
             "description": "Generate clean dual-iPhone mockups for your app store listings and social posts.",
             "url": "https://www.byfu.app/#iphone-duo-mockup-generator"
           }
         },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "Clack", "description": "Coming soon." } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Folder", "description": "Coming soon." } },
-        { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareApplication", "name": "Cursor", "description": "Coming soon." } }
+        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Clack", "description": "Coming soon." } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareApplication", "name": "Folder", "description": "Coming soon." } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "SoftwareApplication", "name": "Cursor", "description": "Coming soon." } }
       ]
     }
   ]
@@ -196,7 +206,9 @@
   .fu-intro-main article:nth-child(2) { animation-delay: 0.30s; }
   .fu-intro-main article:nth-child(3) { animation-delay: 0.42s; }
   .fu-intro-main article:nth-child(4) { animation-delay: 0.54s; }
-  .fu-intro-footer { animation-delay: 0.62s; }
+  .fu-intro-main article:nth-child(5) { animation-delay: 0.66s; }
+  .fu-intro-main article:nth-child(6) { animation-delay: 0.78s; }
+  .fu-intro-footer { animation-delay: 0.86s; }
   @media (prefers-reduced-motion: reduce) {
     .fu-intro, .fu-intro-header, .fu-intro-main article, .fu-intro-footer { animation: none; opacity: 1; }
   }
@@ -212,6 +224,21 @@
     </header>
 
     <main class="fu-intro-main">
+
+      <article>
+        <div class="card-top">
+          <img class="icon" src="assets/lizard.png" alt="Lizard">
+          <div class="meta-col">
+            <h2>Lizard</h2>
+            <div class="status-row">
+              <span>Sep 2026</span>
+              <span class="status active"><span class="dot"></span>Active</span>
+            </div>
+          </div>
+        </div>
+        <p class="blurb">A tiny tribute to the lizard meme from Pixar's Hoppers — it wouldn't leave my head, so I made it a website.</p>
+        <a class="visit" href="https://lizard-hoppers.vercel.app/">Visit website <span class="arrow">↗</span></a>
+      </article>
 
       <article>
         <div class="card-top">
