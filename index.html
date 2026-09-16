@@ -124,7 +124,8 @@
 
   article { display: flex; flex-direction: column; gap: 18px; }
 
-  .card-top { position: relative; display: flex; align-items: flex-start; gap: 16px; }
+  .card-top { position: relative; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .card-left { display: flex; align-items: flex-start; gap: 16px; min-width: 0; }
 
   .icon {
     flex: none;
@@ -169,17 +170,23 @@
   .blurb { margin: 0; font-size: 16.5px; line-height: 1.6; color: #3a3d42; max-width: 56ch; }
 
   .visit {
+    flex: none;
     display: inline-flex;
     align-items: center;
-    gap: 7px;
-    font-size: 15px;
+    gap: 6px;
+    font-size: 14.5px;
     font-weight: 600;
     width: fit-content;
-    padding-bottom: 2px;
-    border-bottom: 1px solid #e0e0de;
+    white-space: nowrap;
+    padding-top: 2px;
   }
-  .visit:hover { border-bottom: 1px solid #111214; }
+  .visit:hover { color: #5c6066; }
   .visit .arrow { font-size: 13px; }
+
+  @media (max-width: 480px) {
+    .card-top { flex-wrap: wrap; }
+    .visit { margin-left: 60px; padding-top: 0; }
+  }
 
   footer {
     display: flex;
@@ -227,54 +234,62 @@
 
       <article>
         <div class="card-top">
-          <img class="icon" src="assets/winter-arc.png" alt="Winter Arc">
-          <div class="meta-col">
-            <h2>Winter Arc</h2>
-            <div class="status-row">
-              <span>Sep 2026</span>
-              <span class="status active"><span class="dot"></span>Active</span>
+          <div class="card-left">
+            <img class="icon" src="assets/winter-arc.png" alt="Winter Arc">
+            <div class="meta-col">
+              <h2>Winter Arc</h2>
+              <div class="status-row">
+                <span>Sep 2026</span>
+                <span class="status active"><span class="dot"></span>Active</span>
+              </div>
             </div>
           </div>
+          <a class="visit" href="#winter-arc">Visit Website <span class="arrow">↗</span></a>
         </div>
-        <p class="blurb">A winter arc challenge for designers: daily prompts to keep making through the off-season.</p>
-        <a class="visit" href="#winter-arc">Visit website <span class="arrow">↗</span></a>
+        <p class="blurb">A winter arc challenge for designers, offering daily prompts and small creative exercises to keep you making, testing, and shipping through the off-season.</p>
       </article>
 
       <article>
         <div class="card-top">
-          <img class="icon" src="assets/iphone-duo.png" alt="iPhone Duo Mockup Generator">
-          <div class="meta-col">
-            <h2>iPhone Duo Mockup Generator</h2>
-            <div class="status-row">
-              <span>Aug 2026</span>
-              <span class="status active"><span class="dot"></span>Active</span>
+          <div class="card-left">
+            <img class="icon" src="assets/iphone-duo.png" alt="iPhone Duo Mockup Generator">
+            <div class="meta-col">
+              <h2>iPhone Duo Mockup Generator</h2>
+              <div class="status-row">
+                <span>Aug 2026</span>
+                <span class="status active"><span class="dot"></span>Active</span>
+              </div>
             </div>
           </div>
+          <a class="visit" href="#iphone-duo-mockup-generator">Visit Website <span class="arrow">↗</span></a>
         </div>
-        <p class="blurb">Generate clean dual-iPhone mockups for your app store listings and social posts.</p>
-        <a class="visit" href="#iphone-duo-mockup-generator">Visit website <span class="arrow">↗</span></a>
+        <p class="blurb">Generate clean dual-iPhone mockups in seconds for your app store listings, landing pages, and social media posts without touching design software.</p>
       </article>
 
       <article>
         <div class="card-top">
-          <img class="icon" src="assets/lizard.png" alt="Lizard">
-          <div class="meta-col">
-            <h2>Lizard</h2>
-            <div class="status-row">
-              <span>Feb 2026</span>
-              <span class="status active"><span class="dot"></span>Active</span>
+          <div class="card-left">
+            <img class="icon" src="assets/lizard.png" alt="Lizard">
+            <div class="meta-col">
+              <h2>Lizard</h2>
+              <div class="status-row">
+                <span>Feb 2026</span>
+                <span class="status active"><span class="dot"></span>Active</span>
+              </div>
             </div>
           </div>
+          <a class="visit" href="https://lizard-hoppers.vercel.app/">Visit Website <span class="arrow">↗</span></a>
         </div>
         <p class="blurb">A tiny tribute to the lizard meme from Pixar's Hoppers: it wouldn't leave my head, so I made it a website.</p>
-        <a class="visit" href="https://lizard-hoppers.vercel.app/">Visit website <span class="arrow">↗</span></a>
       </article>
 
       <article>
         <div class="card-top">
-          <div class="icon placeholder"></div>
-          <div class="meta-col">
-            <h2>Clack</h2>
+          <div class="card-left">
+            <div class="icon placeholder"></div>
+            <div class="meta-col">
+              <h2>Clack</h2>
+            </div>
           </div>
           <span class="stamp">Coming soon</span>
         </div>
@@ -282,9 +297,11 @@
 
       <article>
         <div class="card-top">
-          <div class="icon placeholder"></div>
-          <div class="meta-col">
-            <h2>Folder</h2>
+          <div class="card-left">
+            <div class="icon placeholder"></div>
+            <div class="meta-col">
+              <h2>Folder</h2>
+            </div>
           </div>
           <span class="stamp">Coming soon</span>
         </div>
@@ -292,9 +309,11 @@
 
       <article>
         <div class="card-top">
-          <div class="icon placeholder"></div>
-          <div class="meta-col">
-            <h2>Cursor</h2>
+          <div class="card-left">
+            <div class="icon placeholder"></div>
+            <div class="meta-col">
+              <h2>Cursor</h2>
+            </div>
           </div>
           <span class="stamp">Coming soon</span>
         </div>
